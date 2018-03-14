@@ -18,12 +18,18 @@ class Rocket(object):
         cap = Polygon(Point(x,y),Point(x +25,y -25),Point(x +55,y))
         cap.setFill(color)
         fire = Image(Point(330, 625),"flame.gif")
-        fire2 = Image(Point(600, 625), "flame.gif")
+        fire2 = Image(Point(590, 627), "flame.gif")
+        bar = Line(Point(380,400),Point(400,400))
+        bar.setWidth(10)
+        bar2 = Line(Point(550, 400), Point(575, 400))
+        bar2.setWidth(10)
         body.draw(win)
         engin.draw(win)
         cap.draw(win)
         fire.draw(win)
         fire2.draw(win)
+        bar.draw(win)
+        bar2.draw(win)
 
 
 
